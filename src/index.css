@@ -1,0 +1,30 @@
+@import "tailwindcss";
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*  infinite scroll */
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-infinite {
+  display: flex;
+  animation: smoothScroll 20s linear infinite;
+}
+
+.animate-infinite:hover {
+  animation-play-state: paused;
+}
+
+@media (hover: none) {
+  .animate-infinite:active {
+    animation-play-state: paused;
+  }
+}
+
