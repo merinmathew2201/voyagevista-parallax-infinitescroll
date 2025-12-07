@@ -1,6 +1,10 @@
 import React from 'react'
 import {  Parallax } from 'react-scroll-parallax'
 import {  motion } from 'framer-motion'
+import moon from '../assets/images/moon.png'
+import birdlr from '../assets/images/birdlr.png'
+import birdsrl from '../assets/images/birdsrl.png'
+
 
 function Landing() {
     return (
@@ -19,18 +23,18 @@ function Landing() {
 
                 <div className="absolute left-60 top-30">
                     <Parallax translateX={[-200, 300]} translateY={[0, 0]}>
-                        <img src="./src/assets/images/moon.png" alt="birds" className='w-25 h-20' />
+                        <img src={moon} alt="moon" className='w-25 h-20' />
                     </Parallax>
                 </div>
                 <div className="absolute left-10 top-20">
                     <Parallax translateX={[-50, 50]} translateY={[250, -100]}>
-                        <img src="./src/assets/images/birdlr.png" alt="birds" className='w-40 h-50' />
+                        <img src={birdlr} alt="birds" className='w-40 h-50' />
                     </Parallax>
                 </div>
 
                 <div className='absolute right-0 top-30'>
                     <Parallax translateX={[50, -50]} translateY={[200, -150]}>
-                        <img src="./src/assets/images/birdsrl.png" alt="birds" className='w-60 h-50' />
+                        <img src={birdsrl} alt="birds" className='w-60 h-50' />
                     </Parallax>
                 </div>
 
